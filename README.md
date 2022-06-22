@@ -7,14 +7,11 @@ To perform the example experiments, after cloning and changing directory into th
 python3 -m venv local
 source local/bin/activate
 
-# install required packages and small corpora
+# install required packages and corpus for example study:
 pip install -r requirements.txt
 python -c 'import nltk; nltk.download("stopwords")'
 wget www.logical-space.org/authors.zip -O data/authors.zip
-unzip data/authors.zip -d data/
-
-# use the example configuration
-cp custom.py.example custom.py
+unzip data/authors.zip -d data/woman_of_colour/
 ```
 
 Now you should be able to invoke the command:

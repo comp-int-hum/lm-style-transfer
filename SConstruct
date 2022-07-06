@@ -24,8 +24,8 @@ vars.AddVariables(
                     "MODIFICATION_METHOD_VALUES" : [],                    
                 },
                 "data" : {
-                    "UNMODIFIED_DOCUMENTS" : ["data/woman_of_colour/*tei"],
-                    "MODIFIED_DOCUMENTS" : {},
+                    "UNPROCESSED_DOCUMENTS" : ["data/woman_of_colour/*tei"],
+                    "PROCESSED_DOCUMENTS" : {},
                 }
             }
         }

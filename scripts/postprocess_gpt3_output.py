@@ -64,13 +64,13 @@ if __name__ == "__main__":
             texts = [x for x in user["body"]]
             for text in texts: #, subreddit, utc in zip(texts, utcs):
                 doc_num = len(restyled_documents[style])
-                author = source_documents[doc_num]["provenance"]["author"]
+                #author = source_documents[doc_num]["provenance"]["author"]
                 restyled_documents[style].append(
                     {
                         "text" : text.numpy().decode("utf-8").strip(),
                         "provenance" : {
                             "original" : source_documents[doc_num]["id"],
-                            "author" : author,
+                            #"author" : author,
                             "style" : style
                         },
                         "id" : "reddit_style_transfer_{}".format(len(source_documents) + len(target_documents) + sum([len(x) for x in restyled_documents.values()]))
